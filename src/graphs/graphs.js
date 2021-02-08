@@ -8,7 +8,7 @@ const graphs = [{ name: 'damage', comp: Damage }, { name: 'dps', comp: DPS }, { 
 const Graphs = ({ weapons }) => {
     const [single, setSingle] = useState(null)
     return <div className="row row-cols-1 row-cols-md-2" style={{minHeight: '35rem'}}>
-        {graphs.map( g => (single === g.name || !single) && <div className="col flex-grow-1 mt-4">
+        {graphs.map( g => (single === g.name || !single) && <div key={g.name} className="col flex-grow-1 mt-4">
             <div className="position-relative">
                 <span className="position-absolute p-1" style={{ right: '1rem' }} onClick={() => single ? setSingle(null) : setSingle(g.name)}>
                     { single ? 

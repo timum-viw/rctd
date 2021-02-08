@@ -41,7 +41,7 @@ const Weapon = ({ data, onCompare, changeTier }) => <div className="col">
             <div className="d-flex">
                 <div className="flex-grow-1">
                     <Stat name="damage" value={data.stats[data.tier].damage[0].value} maxValue={maxValues.damage} />  
-                    <Stat name="range" value={(data.stats[data.tier].damage[1] || {range:Infinity}).range } maxValue={maxValues.range} />  
+                    <Stat name="range" value={(data.stats[data.tier].damage[0] || {range:Infinity}).range } maxValue={maxValues.range} />  
                     <Stat name="firerate" value={data.stats[data.tier].firerate} maxValue={maxValues.firerate} />  
                 </div>
                 <div className="flex-grow-1">
