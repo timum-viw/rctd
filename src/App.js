@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Weapon from './weapon'
 import data from './data'
 import 'd3-transition'
@@ -9,7 +9,8 @@ import colors from './colors'
 const initData = data => data.map( (w, i) => ({ ...w, color: colors(i) }))
 function App() {
   const [ weapons, setWeapons ] = useState(initData(data))
-  const [ search, setSearch ] = useState('')
+  const [ grouping, setGrouping ] = useState('type')
+  const graphsEl = useRef(null)
 
   const toggleCompare = weapon => {
     setWeapons( weapons.map( w => w === weapon ? { ...w, active: !w.active } : w ))
@@ -19,7 +20,8 @@ function App() {
     setWeapons( weapons.map( w => w === weapon ? { ...w, tier } : w ))
   }
 
-  const filteredWeapons = weapons.filter( w => !search || w.name.toLowerCase().includes(search.toLowerCase()) || w.type.toLowerCase().includes(search.toLowerCase()) )
+  const clearSelection = () => setWeapons( weapons.map( w => ({ ...w, active: false })))
+
   return (
     <div className="App">
       <header>
@@ -46,16 +48,50 @@ function App() {
         <div className="album py-5 bg-light">
           <div className="container">
             <div className="row">
-              <div className="col">
-                <div className="px-3">
-                  <input className="w-100 my-2" type="text" placeholder="search..." value={search} onChange={ e => setSearch(e.currentTarget.value) } />
+              <div className="col-6">
+                <div className="px-3 my-2" style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}}>
+                  <span className="mx-3 d-inline-block" style={{borderBottom: grouping === 'type' ? '1px solid navy' : 'none'}} onClick={() => setGrouping('type')}>By Type</span>
+                  <span className="mx-3 d-inline-block" style={{borderBottom: grouping === 'rogue' ? '1px solid navy' : 'none'}} onClick={() => setGrouping('rogue')}>By Rogue</span>
+                </div>
+              </div>
+              <div className="col-6 text-end">
+                <div className="px-3 my-2" style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}}>
+                  <span className="mx-3 d-inline-block" onClick={ () => clearSelection() }>clear selection</span>
                 </div>
               </div>
             </div>
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              { filteredWeapons.map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} />) }
+            { grouping === 'type' ? 
+              weapons
+                .reduce( (acc, curr) => acc.includes(curr.type) ? acc : [curr.type].concat(acc), [] )
+                .map( g => <div key={g}>
+                  <div className="p-1 my-3 d-flex" style={{ borderBottom: '1px solid darkgray'}}>
+                    <div style={{fontSize: '1.1rem'}} className="flex-grow-1">{g}</div>
+                    <div style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}} onClick={() => setWeapons( weapons.map( w => ({...w, active: w.active || w.type === g })))}>select all</div>
+                  </div>
+                  <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                    {weapons.filter( w => w.type === g).map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} />)}
+                  </div>
+                </div>) :
+              weapons
+                .reduce( (acc, curr) => curr.rogues.filter( r => !acc.includes(r) ).concat(acc), [] )
+                .map( r => <div key={r}>
+                  <div className="p-1 my-3 d-flex" style={{ borderBottom: '1px solid darkgray'}}>
+                    <div style={{fontSize: '1.1rem'}} className="flex-grow-1">{r}</div>
+                    <div style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}} onClick={() => setWeapons( weapons.map( w => ({...w, active: w.active || w.rogues.includes(r) })))}>select all</div>
+                  </div>
+                  <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                    {weapons.filter( w => w.rogues.includes(r) ).map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} />)}
+                  </div>
+                </div>)
+            }
+            <div className="text-end" style={{position: 'sticky', bottom: 0 }}>
+              <span className="d-inline-block p-2 m-2 card shadow-sm" style={{ borderRadius: '15%' }} onClick={ () => window.scrollTo(0,graphsEl.current.getBoundingClientRect().y + window.scrollY) }>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 19h-4v-8h4v8zm6 0h-4v-18h4v18zm6 0h-4v-12h4v12zm6 0h-4v-4h4v4zm1 2h-24v2h24v-2z"/></svg>
+              </span>
             </div>
-            <Graphs weapons={filteredWeapons} />
+            <div ref={graphsEl}>
+              <Graphs weapons={weapons} />
+            </div>
           </div>
         </div>
         
@@ -64,7 +100,7 @@ function App() {
       <footer className="text-muted py-5">
         <div className="container">
           <p className="float-end mb-1">
-            <a href="/">Back to top</a>
+            <span onClick={ () => window.scrollTo(0,0) }>Back to top</span>
           </p>
           <p className="mb-1">RCTD is &copy; by github.com/timum-viw</p>
         </div>

@@ -904,7 +904,8 @@ const data = [
                 firerate: 11,
                 handling: 26,
                 magSize: 90,
-                reloadtime: 4
+                reloadtime: 4,
+                other: ['increased movmentspeed while aiming']
             },
             {
                 damage: [{range: 21, value: 16}, {range: 36, value: 13}, {range: Infinity, value: 11}],
@@ -912,7 +913,7 @@ const data = [
                 handling: 31,
                 magSize: 90,
                 reloadtime: 4,
-                other: ['reduced reticle bloom']
+                other: ['increased movmentspeed while aiming', 'reduced reticle bloom']
             },
         ],
         rogues: ['Anvil']

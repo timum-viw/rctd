@@ -14,7 +14,7 @@ const Stat = ({ name, value, maxValue, invert }) => <div>
 
 const Weapon = ({ data, onCompare, changeTier }) => <div className="col">
     <div className="card shadow-sm">
-    {data.image ? 
+    {/* {data.image ? 
         <div style={{height: '225px'}} className="d-flex align-items-center">
             <img src={data.image} alt={data.name} width="100%" height="auto" /> 
         </div> : 
@@ -31,11 +31,11 @@ const Weapon = ({ data, onCompare, changeTier }) => <div className="col">
                     {data.name}
                 </text>
         </svg>
-    }
+    } */}
     <div className="card-body">
         <div>
             <h5>{data.name}<small style={{color: '#44444499', marginLeft: '.5rem'}} >{data.type}</small></h5>
-            
+            <div className="fst-italic mb-1" style={{ fontSize: '.7rem' }}>{data.rogues.join(', ')}</div>
         </div>
         <div className="card-text" style={{color: 'grey', fontSize: '.8rem'}}>
             <div className="d-flex">
@@ -64,14 +64,9 @@ const Weapon = ({ data, onCompare, changeTier }) => <div className="col">
             </div>
             <small className="text-muted">
                 <span style={{paddingRight: '.4rem'}}>tier</span>
-                {data.stats.map( (s, i) => <button
-                    key={i}
-                    type="button" 
-                    className={`btn btn-sm btn-outline-secondary ${ data.tier === i && 'active'}`} 
-                    data-bs-toggle="button"
-                    onClick={() => changeTier(i, data)}>
-                        {i}
-                </button>)}
+                <span className="mx-1" style={{cursor: 'pointer', visibility: data.tier > 0 ? 'visible' : 'hidden' }} onClick={ () => changeTier(Math.max(data.tier - 1, 0), data) }>&lt;</span>
+                <span>{data.tier}</span>
+                <span className="mx-1" style={{cursor: 'pointer', visibility: data.tier < data.stats.length - 1 ? 'visible' : 'hidden' }} onClick={ () => changeTier(Math.min(data.tier + 1, data.stats.length - 1), data) }>&gt;</span>
             </small>
             </div>
         </div>
