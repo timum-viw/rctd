@@ -21,6 +21,7 @@ function App() {
   }
 
   const clearSelection = () => setWeapons( weapons.map( w => ({ ...w, active: false })))
+  const selectAll = () => setWeapons( weapons.map( w => ({ ...w, active: true })))
 
   return (
     <div className="App">
@@ -56,7 +57,7 @@ function App() {
               </div>
               <div className="col-6 text-end">
                 <div className="px-3 my-2" style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}}>
-                  <span className="mx-3 d-inline-block" onClick={ () => clearSelection() }>clear selection</span>
+                  <span className="mx-3 d-inline-block" onClick={ () => selectAll() }>compare all</span>
                 </div>
               </div>
             </div>
@@ -84,7 +85,10 @@ function App() {
                   </div>
                 </div>)
             }
-            <div className="text-end" style={{position: 'sticky', bottom: 0 }}>
+            <div className="text-end" style={{position: 'sticky', bottom: 0}}>
+              <span className="d-inline-block p-2 m-2 card shadow-sm" style={{ borderRadius: '15%' }} onClick={ () => clearSelection() }>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M5.662 23l-5.369-5.365c-.195-.195-.293-.45-.293-.707 0-.256.098-.512.293-.707l14.929-14.928c.195-.194.451-.293.707-.293.255 0 .512.099.707.293l7.071 7.073c.196.195.293.451.293.708 0 .256-.097.511-.293.707l-11.216 11.219h5.514v2h-12.343zm3.657-2l-5.486-5.486-1.419 1.414 4.076 4.072h2.829zm.456-11.429l-4.528 4.528 5.658 5.659 4.527-4.53-5.657-5.657z"/></svg>
+              </span>
               <span className="d-inline-block p-2 m-2 card shadow-sm" style={{ borderRadius: '15%' }} onClick={ () => window.scrollTo(0,graphsEl.current.getBoundingClientRect().y + window.scrollY) }>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 19h-4v-8h4v8zm6 0h-4v-18h4v18zm6 0h-4v-12h4v12zm6 0h-4v-4h4v4zm1 2h-24v2h24v-2z"/></svg>
               </span>
