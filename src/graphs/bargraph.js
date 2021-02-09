@@ -31,7 +31,7 @@ const BarGraph = ({ weapons, title, toValue, invert, ...props }) => {
                     <tbody>
                         { weapons.sort( (a,b) => isNaN(toValue(a)) ? (isNaN(toValue(b)) ? -1 : 1) : (invert ? -1 : 1)*(toValue(b) - toValue(a))).map( (w, i) => {
                         const value = toValue(w)
-                        return <tr key={w.name} > 
+                        return <tr key={w.name} style={{cursor: 'pointer'}} onClick={ () => window.scrollBy(0, document.getElementById(w.name).getBoundingClientRect().y - 15)}> 
                             <td>{i+1}</td>
                             <td style={{whiteSpace: 'nowrap'}}>{w.name}</td>
                             <td style={{whiteSpace: 'nowrap', fontSize: '.6rem'}}>{w.type}</td>

@@ -12,7 +12,7 @@ const Stat = ({ name, value, maxValue, invert }) => <div>
     </div>
 </div>
 
-const Weapon = ({ data, onCompare, changeTier }) => <div className="col">
+const Weapon = ({ data, onCompare, changeTier }) => <div className="col" id={data.name}>
     <div className="card shadow-sm">
     {/* {data.image ? 
         <div style={{height: '225px'}} className="d-flex align-items-center">
