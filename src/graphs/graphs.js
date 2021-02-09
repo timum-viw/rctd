@@ -7,12 +7,12 @@ import { TTKLines, TTKBars } from './ttk'
 const graphs = [{ name: 'damage', lines: DamageLines, bars: DamageBars }, { name: 'dps', lines: DPSLines, bars: DPSBars }, { name: 'dpm', lines: DPMLines, bars: DPMBars }, { name: 'ttk', lines: TTKLines, bars: TTKBars }]
 const Graphs = ({ weapons }) => {
     const [single, setSingle] = useState(null)
-    const [mode, setMode] = useState('lines')
+    const [mode, setMode] = useState('bars')
 
     return <div>
         <div className="px-3 my-2" style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}}>
-            <span className="mx-3 d-inline-block" style={{borderBottom: mode === 'type' ? '1px solid navy' : 'none'}} onClick={() => setMode('lines')}>lines</span>
-            <span className="mx-3 d-inline-block" style={{borderBottom: mode === 'rogue' ? '1px solid navy' : 'none'}} onClick={() => setMode('bars')}>bars</span>
+            <span className="mx-3 d-inline-block" style={{borderBottom: mode === 'lines' ? '1px solid navy' : 'none'}} onClick={() => setMode('lines')}>lines</span>
+            <span className="mx-3 d-inline-block" style={{borderBottom: mode === 'bars' ? '1px solid navy' : 'none'}} onClick={() => setMode('bars')}>bars</span>
         </div>
         <div className="row row-cols-1 row-cols-md-2" style={{minHeight: '35rem'}}>
             {graphs.map( g => (single === g.name || !single) && <div key={g.name} className="col flex-grow-1 my-2">
