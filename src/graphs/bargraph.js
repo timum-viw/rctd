@@ -1,3 +1,14 @@
+import { useState } from 'react'
+
+export const withRange = WrappedComp => props => {
+    const [range, setRange] = useState(0)
+    return <WrappedComp range={range} {...props} >
+        {props.children}
+        <label className="form-label" style={{fontSize: '.75rem'}}>range {range}</label>
+        <input type="range" className="form-range" value={range} onChange={ e => setRange(e.currentTarget.value) }></input>
+    </WrappedComp>
+}
+
 const BarGraph = ({ weapons, title, toValue, invert, ...props }) => {
     const maxValue = Math.max(...weapons.map( toValue ).filter( v => !isNaN(v) ))
     return <div className="card shadow-sm h-100 d-flex">
