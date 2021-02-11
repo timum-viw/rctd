@@ -23,6 +23,23 @@ function App() {
   const clearSelection = () => setWeapons( weapons.map( w => ({ ...w, active: false })))
   const selectAll = () => setWeapons( weapons.map( w => ({ ...w, active: true })))
 
+  const Grouping = ({ toGroups }) => <div>
+    {weapons
+      .reduce( (acc, curr) => toGroups(curr).filter( g => !acc.includes(g) ).concat(acc), [] )
+      .map( g => <div key={g}>
+        <div className="p-1 my-3 d-flex" style={{ borderBottom: '1px solid darkgray'}}>
+          <div style={{fontSize: '1.1rem'}} className="flex-grow-1">{g}</div>
+          { weapons.some( w => w.active && toGroups(w).includes(g)) ?                    
+            <div style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}} onClick={() => setWeapons( weapons.map( w => ({...w, active: w.active && !toGroups(w).includes(g) })))}>select none</div> :
+            <div style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}} onClick={() => setWeapons( weapons.map( w => ({...w, active: w.active || toGroups(w).includes(g) })))}>select all</div>
+          }
+        </div>
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+          {weapons.filter( w => toGroups(w).includes(g) ).map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} range={range} />)}
+        </div>
+      </div>)}
+  </div>
+
   return (
     <div className="App">
       <header>
@@ -62,34 +79,8 @@ function App() {
               </div>
             </div>
             { grouping === 'type' ? 
-              weapons
-                .reduce( (acc, curr) => acc.includes(curr.type) ? acc : [curr.type].concat(acc), [] )
-                .map( g => <div key={g}>
-                  <div className="p-1 my-3 d-flex" style={{ borderBottom: '1px solid darkgray'}}>
-                    <div style={{fontSize: '1.1rem'}} className="flex-grow-1">{g}</div>
-                    { weapons.filter( w => w.type === g).some( w => w.active) ?                    
-                      <div style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}} onClick={() => setWeapons( weapons.map( w => ({...w, active: w.active && w.type !== g })))}>select none</div> :
-                      <div style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}} onClick={() => setWeapons( weapons.map( w => ({...w, active: w.active || w.type === g })))}>select all</div>
-                    }
-                  </div>
-                  <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
-                    {weapons.filter( w => w.type === g).map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} />)}
-                  </div>
-                </div>) :
-              weapons
-                .reduce( (acc, curr) => curr.rogues.filter( r => !acc.includes(r) ).concat(acc), [] )
-                .map( r => <div key={r}>
-                  <div className="p-1 my-3 d-flex" style={{ borderBottom: '1px solid darkgray'}}>
-                    <div style={{fontSize: '1.1rem'}} className="flex-grow-1">{r}</div>
-                    { weapons.filter( w => w.rogues.includes(r) ).some( w => w.active) ?
-                      <div style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}} onClick={() => setWeapons( weapons.map( w => ({...w, active: w.active && !w.rogues.includes(r) })))}>select none</div> :
-                      <div style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}} onClick={() => setWeapons( weapons.map( w => ({...w, active: w.active || w.rogues.includes(r) })))}>select all</div>
-                    }
-                  </div>
-                  <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
-                    {weapons.filter( w => w.rogues.includes(r) ).map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} />)}
-                  </div>
-                </div>)
+              <Grouping toGroups={w => [w.type]} /> :
+              <Grouping toGroups={w => w.rogues} />
             }
             <div className="text-end" style={{position: 'sticky', bottom: 0, fontSize: '.8rem'}}>
               <span className="d-inline-block p-2 m-2 card shadow-sm" style={{ borderRadius: '15%' }} onClick={ () => clearSelection() }>
