@@ -5,7 +5,7 @@ import { DPMLines, DPMBars } from './dpm'
 import { TTKLines, TTKBars } from './ttk'
 
 const graphs = [{ name: 'damage', lines: DamageLines, bars: DamageBars }, { name: 'dps', lines: DPSLines, bars: DPSBars }, { name: 'dpm', lines: DPMLines, bars: DPMBars }, { name: 'ttk', lines: TTKLines, bars: TTKBars }]
-const Graphs = ({ weapons }) => {
+const Graphs = ({ weapons, range }) => {
     const [single, setSingle] = useState(null)
     const [mode, setMode] = useState('bars')
 
@@ -25,7 +25,7 @@ const Graphs = ({ weapons }) => {
                 </div>
                 {mode === 'lines' ?
                     <g.lines weapons={weapons} /> : 
-                    <g.bars weapons={weapons} />
+                    <g.bars weapons={weapons} range={range} />
                 }
             </div>)}
         </div>

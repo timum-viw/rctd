@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import BarGraph, { withRange } from './bargraph'
+import BarGraph from './bargraph'
 import LinearGraph from './lineargraph'
 
 const withArmored = WrappedComp => props => {
@@ -25,7 +25,7 @@ const TTKLines = withArmored(({ armored, weapons, ...props }) => {
     </LinearGraph>
 })
 
-const TTKBars = withRange(withArmored(({ armored, range, weapons, ...props }) => {
+const TTKBars = withArmored(({ armored, range, weapons, ...props }) => {
     const toValue = w => {
         const damage = w.stats[w.tier].damage.find( d => d.range >= range )
         if(!damage) return NaN
@@ -36,6 +36,6 @@ const TTKBars = withRange(withArmored(({ armored, range, weapons, ...props }) =>
     return <BarGraph weapons={weapons} toValue={toValue} title='Time to Kill' invert>
         {props.children}
     </BarGraph>
-}))
+})
 
 export { TTKLines, TTKBars }
