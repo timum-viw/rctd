@@ -24,10 +24,10 @@ function App() {
   const clearSelection = () => setWeapons( weapons.map( w => ({ ...w, active: false })))
   const selectAll = () => setWeapons( weapons.map( w => ({ ...w, active: true })))
 
-  const Grouping = ({ toGroups }) => <div>
+  const Grouping = ({ toGroups }) => <div className="row">
     {weapons
       .reduce( (acc, curr) => toGroups(curr).filter( g => !acc.includes(g) ).concat(acc), [] )
-      .map( g => <div key={g}>
+      .map( g => <div key={g} className="col-12">
         <div className="p-1 my-3 d-flex" style={{ borderBottom: '1px solid darkgray'}}>
           <div style={{fontSize: '1.1rem'}} className="flex-grow-1">{g}</div>
           { weapons.some( w => w.active && toGroups(w).includes(g)) ?                    
@@ -36,7 +36,9 @@ function App() {
           }
         </div>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
-          {weapons.filter( w => toGroups(w).includes(g) ).map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} range={range} />)}
+          {weapons
+            .filter( w => toGroups(w).includes(g) )
+            .map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} range={range} />)}
         </div>
       </div>)}
   </div>
@@ -69,8 +71,9 @@ function App() {
             <div className="row">
               <div className="col-6">
                 <div className="px-3 my-2" style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}}>
-                  <span className="mx-3 d-inline-block" style={{borderBottom: grouping === 'type' ? '1px solid navy' : 'none'}} onClick={() => setGrouping('type')}>By Type</span>
-                  <span className="mx-3 d-inline-block" style={{borderBottom: grouping === 'rogue' ? '1px solid navy' : 'none'}} onClick={() => setGrouping('rogue')}>By Rogue</span>
+                  <span className="ms-3 d-inline-block" style={{ color: 'darkgray'}}>group by</span>
+                  <span className="mx-2 d-inline-block" style={{borderBottom: grouping === 'type' ? '1px solid navy' : 'none'}} onClick={() => setGrouping('type')}>By Type</span>
+                  <span className="mx-2 d-inline-block" style={{borderBottom: grouping === 'rogue' ? '1px solid navy' : 'none'}} onClick={() => setGrouping('rogue')}>By Rogue</span>
                 </div>
               </div>
               <div className="col-6 text-end">
@@ -83,7 +86,7 @@ function App() {
               <Grouping toGroups={w => [w.type]} /> :
               <Grouping toGroups={w => w.rogues} />
             }
-            <div className="text-end" style={{position: 'sticky', bottom: 0, fontSize: '.8rem'}}>
+            <div className="text-end" style={{position: 'sticky', bottom: 0, top: 0, zIndex: 2, fontSize: '.8rem'}}>
               <span className="d-inline-block p-2 m-2 card shadow-sm" style={{ borderRadius: '.4rem' }}>
                 <div className="d-flex">
                   <div className="mx-1" style={{fontSize: '.75rem'}}>range</div>
@@ -116,7 +119,7 @@ function App() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
