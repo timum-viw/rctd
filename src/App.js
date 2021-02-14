@@ -119,6 +119,7 @@ function App() {
           <p className="float-end mb-1">
             <span onClick={ () => window.scrollTo(0,0) }>Back to top</span>
           </p>
+          <p className="mb-1">Have Feedback? Found an error? Want to contribute? Visit <a href="https://github.com/timum-viw/rctd" target="_blank" rel="noreferrer">https://github.com/timum-viw/rctd</a></p>
           <p className="mb-1">RCTD is &copy; by github.com/timum-viw</p>
         </div>
       </footer>
