@@ -23,6 +23,8 @@ function App() {
 
   const clearSelection = () => setWeapons( weapons.map( w => ({ ...w, active: false })))
   const selectAll = () => setWeapons( weapons.map( w => ({ ...w, active: true })))
+  const maxTier = () => setWeapons( weapons.map( w => ({ ...w, tier: w.stats.length - 1 })))
+  const baseTier = () => setWeapons( weapons.map( w => ({ ...w, tier: 0 })))
 
   const Grouping = ({ toGroups }) => <div className="row">
     {weapons
@@ -78,6 +80,8 @@ function App() {
               </div>
               <div className="col-6 text-end">
                 <div className="px-3 my-2" style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}}>
+                  <span className="mx-3 d-inline-block" onClick={ () => baseTier() }>base tier</span>
+                  <span className="mx-3 d-inline-block" onClick={ () => maxTier() }>max tier</span>
                   <span className="mx-3 d-inline-block" onClick={ () => selectAll() }>compare all</span>
                 </div>
               </div>
