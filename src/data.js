@@ -960,14 +960,14 @@ const data = [
         type: 'sniper',
         stats: [
             {
-                damage: [{range: 60, value: 40}],
+                damage: [{range: 40, value: 60}],
                 firerate: 3,
                 handling: 20,
                 magSize: 2,
                 reloadtime: 2.4,
             },
             {
-                damage: [{range: 60, value: 40}],
+                damage: [{range: 40, value: 60}],
                 firerate: 3,
                 handling: 20,
                 magSize: 2,
@@ -975,7 +975,7 @@ const data = [
                 other: ['increased ads speed', 'increased movement speed while aiming']
             },
             {
-                damage: [{range: 60, value: 40}],
+                damage: [{range: 40, value: 60}],
                 firerate: 3,
                 handling: 23,
                 magSize: 2,
@@ -983,7 +983,7 @@ const data = [
                 other: ['increased ads speed', 'increased movement speed while aiming']
             },
             {
-                damage: [{range: Infinity, value: 40}],
+                damage: [{range: Infinity, value: 60}],
                 firerate: 3,
                 handling: 23,
                 magSize: 2,
