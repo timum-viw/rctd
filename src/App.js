@@ -1,12 +1,13 @@
 import './App.css'
 import { useState, useRef } from 'react'
-import Weapon from './weapon'
+import Grouping from './grouping'
 import data from './data'
 import 'd3-transition'
 import Graphs from './graphs/graphs'
 import colors from './colors'
 
 const initData = data => data.map( (w, i) => ({ ...w, color: colors(i) }))
+  
 function App() {
   const [ weapons, setWeapons ] = useState(initData(data))
   const [ grouping, setGrouping ] = useState('type')
@@ -20,30 +21,12 @@ function App() {
   const changeTier = (tier, weapon) => {
     setWeapons( weapons.map( w => w === weapon ? { ...w, tier } : w ))
   }
-
+  const deselectGroup = g => toGroups => setWeapons( weapons.map( w => ({...w, active: w.active && !toGroups(w).includes(g) })))
+  const selectGroup = g => toGroups => setWeapons( weapons.map( w => ({...w, active: w.active || toGroups(w).includes(g) })))
   const clearSelection = () => setWeapons( weapons.map( w => ({ ...w, active: false })))
   const selectAll = () => setWeapons( weapons.map( w => ({ ...w, active: true })))
   const maxTier = () => setWeapons( weapons.map( w => ({ ...w, tier: w.stats.length - 1 })))
   const baseTier = () => setWeapons( weapons.map( w => ({ ...w, tier: 0 })))
-
-  const Grouping = ({ toGroups }) => <div className="row">
-    {weapons
-      .reduce( (acc, curr) => toGroups(curr).filter( g => !acc.includes(g) ).concat(acc), [] )
-      .map( g => <div key={g} className="col-12">
-        <div className="p-1 my-3 d-flex" style={{ borderBottom: '1px solid darkgray'}}>
-          <div style={{fontSize: '1.1rem'}} className="flex-grow-1">{g}</div>
-          { weapons.some( w => w.active && toGroups(w).includes(g)) ?                    
-            <div style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}} onClick={() => setWeapons( weapons.map( w => ({...w, active: w.active && !toGroups(w).includes(g) })))}>select none</div> :
-            <div style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}} onClick={() => setWeapons( weapons.map( w => ({...w, active: w.active || toGroups(w).includes(g) })))}>select all</div>
-          }
-        </div>
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
-          {weapons
-            .filter( w => toGroups(w).includes(g) )
-            .map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} range={range} />)}
-        </div>
-      </div>)}
-  </div>
 
   return (
     <div className="App">
@@ -74,8 +57,8 @@ function App() {
               <div className="col-6">
                 <div className="px-3 my-2" style={{color: 'navy', fontSize: '.75rem', cursor: 'pointer'}}>
                   <span className="ms-3 d-inline-block" style={{ color: 'darkgray'}}>group by</span>
-                  <span className="mx-2 d-inline-block" style={{borderBottom: grouping === 'type' ? '1px solid navy' : 'none'}} onClick={() => setGrouping('type')}>By Type</span>
-                  <span className="mx-2 d-inline-block" style={{borderBottom: grouping === 'rogue' ? '1px solid navy' : 'none'}} onClick={() => setGrouping('rogue')}>By Rogue</span>
+                  <span className="mx-2 d-inline-block" style={{borderBottom: grouping === 'type' ? '1px solid navy' : 'none'}} onClick={() => setGrouping('type')}>type</span>
+                  <span className="mx-2 d-inline-block" style={{borderBottom: grouping === 'rogue' ? '1px solid navy' : 'none'}} onClick={() => setGrouping('rogue')}>rogue</span>
                 </div>
               </div>
               <div className="col-6 text-end">
@@ -87,8 +70,8 @@ function App() {
               </div>
             </div>
             { grouping === 'type' ? 
-              <Grouping toGroups={w => [w.type]} /> :
-              <Grouping toGroups={w => w.rogues} />
+              <Grouping toGroups={w => [w.type]} weapons={weapons} selectGroup={selectGroup} deselectGroup={deselectGroup} toggleCompare={toggleCompare} changeTier={changeTier} range={range} /> :
+              <Grouping toGroups={w => w.rogues} weapons={weapons} selectGroup={selectGroup} deselectGroup={deselectGroup} toggleCompare={toggleCompare} changeTier={changeTier} range={range} />
             }
             <div className="text-end" style={{position: 'sticky', bottom: 0, top: 0, zIndex: 2, fontSize: '.8rem'}}>
               <span className="d-inline-block p-2 m-2 card shadow-sm" style={{ borderRadius: '.4rem' }}>

@@ -39,6 +39,11 @@ const Weapon = ({ data, onCompare, changeTier, range }) => {
                 <h5>{data.name}<small style={{color: '#44444499', marginLeft: '.5rem'}} >{data.type}</small></h5>
                 <div className="fst-italic mb-1" style={{ fontSize: '.7rem' }}>{data.rogues.join(', ')}</div>
             </div>
+            <div className="d-flex my-2" style={{fontSize: '.9rem', color: 'gray'}}>
+                <div style={{cursor: 'pointer', visibility: data.tier > 0 ? 'visible' : 'hidden' }} onClick={ () => changeTier(Math.max(data.tier - 1, 0), data) }>◀</div>
+                <div className="text-center flex-grow-1">tier<span style={{paddingLeft: '.4rem'}}>{data.tier}</span></div>
+                <div style={{cursor: 'pointer', visibility: data.tier < data.stats.length - 1 ? 'visible' : 'hidden' }} onClick={ () => changeTier(Math.min(data.tier + 1, data.stats.length - 1), data) }>▶</div>
+            </div>
             <div className="card-text" style={{color: 'grey', fontSize: '.8rem'}}>
                 <div className="d-flex">
                     <div className="flex-grow-1">
@@ -64,14 +69,8 @@ const Weapon = ({ data, onCompare, changeTier, range }) => {
                         Compare
                     </button>
                 </div>
-                <small className="text-muted">
-                    <span style={{paddingRight: '.4rem'}}>tier</span>
-                    <span className="mx-1" style={{cursor: 'pointer', visibility: data.tier > 0 ? 'visible' : 'hidden' }} onClick={ () => changeTier(Math.max(data.tier - 1, 0), data) }>&lt;</span>
-                    <span>{data.tier}</span>
-                    <span className="mx-1" style={{cursor: 'pointer', visibility: data.tier < data.stats.length - 1 ? 'visible' : 'hidden' }} onClick={ () => changeTier(Math.min(data.tier + 1, data.stats.length - 1), data) }>&gt;</span>
-                </small>
-                </div>
             </div>
+        </div>
         </div>
     </div>
 }
