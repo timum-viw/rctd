@@ -100,6 +100,7 @@ function App() {
           </p>
           <p className="mb-1">Have Feedback? Found an error? Want to contribute? Visit <a href="https://github.com/timum-viw/rctd" target="_blank" rel="noreferrer">https://github.com/timum-viw/rctd</a></p>
           <p className="mb-1">RCTD is &copy; by github.com/timum-viw</p>
+          <p className="mb-1" style={{ fontSize: '.8rem' }}>Everything found here is based on information provided by the community. It does not reflect any official data. All trademarks are property of hi-rez studios.</p>
         </div>
       </footer>
     </div>
