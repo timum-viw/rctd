@@ -21,8 +21,7 @@ function App() {
   const changeTier = (tier, weapon) => {
     setWeapons( weapons.map( w => w === weapon ? { ...w, tier } : w ))
   }
-  const deselectGroup = g => toGroups => setWeapons( weapons.map( w => ({...w, active: w.active && !toGroups(w).includes(g) })))
-  const selectGroup = g => toGroups => setWeapons( weapons.map( w => ({...w, active: w.active || toGroups(w).includes(g) })))
+
   const clearSelection = () => setWeapons( weapons.map( w => ({ ...w, active: false })))
   const selectAll = () => setWeapons( weapons.map( w => ({ ...w, active: true })))
   const maxTier = () => setWeapons( weapons.map( w => ({ ...w, tier: w.stats.length - 1 })))
@@ -70,8 +69,8 @@ function App() {
               </div>
             </div>
             { grouping === 'type' ? 
-              <Grouping toGroups={w => [w.type]} weapons={weapons} selectGroup={selectGroup} deselectGroup={deselectGroup} toggleCompare={toggleCompare} changeTier={changeTier} range={range} /> :
-              <Grouping toGroups={w => w.rogues} weapons={weapons} selectGroup={selectGroup} deselectGroup={deselectGroup} toggleCompare={toggleCompare} changeTier={changeTier} range={range} />
+              <Grouping toGroups={w => [w.type]} weapons={weapons} setWeapons={setWeapons} toggleCompare={toggleCompare} changeTier={changeTier} range={range} /> :
+              <Grouping toGroups={w => w.rogues} weapons={weapons} setWeapons={setWeapons} toggleCompare={toggleCompare} changeTier={changeTier} range={range} />
             }
             <div className="text-end" style={{position: 'sticky', bottom: 0, top: 0, zIndex: 2, fontSize: '.8rem'}}>
               <span className="d-inline-block p-2 m-2 card shadow-sm" style={{ borderRadius: '.4rem' }}>
