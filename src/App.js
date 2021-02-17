@@ -4,12 +4,9 @@ import Grouping from './grouping'
 import data from './data'
 import 'd3-transition'
 import Graphs from './graphs/graphs'
-import colors from './colors'
-
-const initData = data => data.map( (w, i) => ({ ...w, color: colors(i) }))
   
 function App() {
-  const [ weapons, setWeapons ] = useState(initData(data))
+  const [ weapons, setWeapons ] = useState(data)
   const [ grouping, setGrouping ] = useState('type')
   const [ range, setRange ] = useState(0)
   const graphsEl = useRef(null)

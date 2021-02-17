@@ -24,7 +24,7 @@ const BarGraph = ({ weapons, title, toValue, invert, ...props }) => {
                             <td>{i+1}</td>
                             <td style={{whiteSpace: 'nowrap'}}>{w.name}</td>
                             <td style={{whiteSpace: 'nowrap', fontSize: '.6rem'}}>{w.type}</td>
-                            <td>{isNaN(value) ? 'NaN' : value}</td>
+                            <td>{isNaN(value) ? '??' : value}</td>
                             <td>
                                 {!isNaN(value) && <div className="progress" style={{margin: '0', height: '.5rem'}}>
                                     <div className="progress-bar" role="progressbar" style={{backgroundColor: '#019b9b', width: (value === Infinity ? maxValue : value) / maxValue*100+'%'}}></div>
