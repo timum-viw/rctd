@@ -19,7 +19,7 @@ export default function LineGraph(props) {
         {d.label}</AnimatedText>))
 
     return (<g className={`animated ${props.className}`} style={props.style}>
-        <AnimatedPath d={props.data} shape={_line} style={{strokeWidth: 2, stroke: props.color || 'black'}}></AnimatedPath>
+        <AnimatedPath d={props.data} shape={_line} style={{strokeWidth: 2, stroke: props.color || 'black'}} className={props.className}></AnimatedPath>
         {props.noPoints || <PointGraph {...props} />}
         {texts}
     </g>)

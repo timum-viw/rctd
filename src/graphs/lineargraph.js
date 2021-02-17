@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { LinearChart } from '../Charting/Chart'
 import LineGraph from '../Charting/LineGraph'
 import { XAxis, YAxis } from '../Charting/Axis'
@@ -12,6 +13,8 @@ const LinearGraph = ({ weapons, toGraphData, title, ticks = 5, ...props }) => {
     const yMax = Math.max(...weapons.flatMap( toGraphData ).map( d => d.y === Infinity ? 0 : d.y ))
     const replaceInfinity = d => ({ y: d.y, x: d.x === Infinity ? xMax : d.x})
 
+    const [focus, setFocus] = useState()
+
     return <div style={{ overflow: 'hidden' }} className="card shadow-sm h-100 d-flex">
         <div className="card-body flex-grow-1 d-flex flex-column">
             <h5>{title}</h5>
@@ -21,11 +24,11 @@ const LinearGraph = ({ weapons, toGraphData, title, ticks = 5, ...props }) => {
                     <XAxis />
                     <YAxis ticks={{count: ticks}} />
                     { weapons.map( w => 
-                        <LineGraph noPoints key={w.name} curve={curveStepBefore} color={w.color} data={ addFirst(toGraphData(w)).map( replaceInfinity ) } /> 
+                        <LineGraph noPoints key={w.name} className={w.name === focus && 'focus'} curve={curveStepBefore} color={w.color} data={ addFirst(toGraphData(w)).map( replaceInfinity ) } /> 
                     )}
                 </LinearChart>
             </div>
-            <Legend weapons={weapons} />
+            <Legend weapons={weapons} setFocus={setFocus} />
         </div>
     </div>
 }
