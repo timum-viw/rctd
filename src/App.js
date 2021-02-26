@@ -9,6 +9,7 @@ function App() {
   const [ weapons, setWeapons ] = useState(data)
   const [ grouping, setGrouping ] = useState('type')
   const [ range, setRange ] = useState(0)
+  const [ headshot, setHeadshot ] = useState(false)
   const graphsEl = useRef(null)
 
   const toggleCompare = weapon => {
@@ -66,10 +67,13 @@ function App() {
               </div>
             </div>
             { grouping === 'type' ? 
-              <Grouping toGroups={w => [w.type]} weapons={weapons} setWeapons={setWeapons} toggleCompare={toggleCompare} changeTier={changeTier} range={range} /> :
-              <Grouping toGroups={w => w.rogues} weapons={weapons} setWeapons={setWeapons} toggleCompare={toggleCompare} changeTier={changeTier} range={range} />
+              <Grouping toGroups={w => [w.type]} weapons={weapons} setWeapons={setWeapons} toggleCompare={toggleCompare} changeTier={changeTier} range={range} headshot={headshot} /> :
+              <Grouping toGroups={w => w.rogues} weapons={weapons} setWeapons={setWeapons} toggleCompare={toggleCompare} changeTier={changeTier} range={range} headshot={headshot} />
             }
             <div className="text-end" style={{position: 'sticky', bottom: 0, top: 0, zIndex: 2, fontSize: '.8rem'}}>
+              <span className="d-inline-block p-2 m-2 card shadow-sm" style={{ borderRadius: '15%' }} onClick={ () => setHeadshot(!headshot) }>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill={ headshot ? 'green' : 'black'} d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4 17h-8v-2h8v2zm-7.5-9c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5-.672-1.5-1.5-1.5zm7 0c.828 0 1.5.671 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.671-1.5-1.5.672-1.5 1.5-1.5zm0-2c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5z"/></svg>
+              </span>
               <span className="d-inline-block p-2 m-2 card shadow-sm" style={{ borderRadius: '.4rem' }}>
                 <div className="d-flex">
                   <div className="mx-1" style={{fontSize: '.75rem'}}>range</div>
@@ -85,8 +89,8 @@ function App() {
                 <span className="badge bg-secondary">{weapons.filter( w => w.active).length}</span>
               </span>
             </div>
-            <div ref={graphsEl}>
-              <Graphs weapons={weapons} range={range} />
+            <div className="row" ref={graphsEl}>
+              <Graphs weapons={weapons} range={range} headshot={headshot} />
             </div>
           </div>
         </div>

@@ -10,7 +10,10 @@ const weapons = data.weapons.map( (w, i) => ({
 
 export default weapons
 export const maxValues = { 
-    damage: Math.max(...weapons.flatMap( w => w.stats.flatMap( s => s.damage.map( d => d.value )))),
+    damage: { 
+        body: Math.max(...weapons.flatMap( w => w.stats.flatMap( s => s.damage.map( d => d.body )))),
+        headshot: Math.max(...weapons.flatMap( w => w.stats.flatMap( s => s.damage.map( d => d.headshot )))),
+    },
     range: Math.max(...weapons.flatMap( w => w.stats.flatMap( s => s.damage.map( d => d.range ))).filter( r => r !== Infinity )),
     firerate: Math.max(...weapons.flatMap( w => w.stats.map( s => s.firerate ))),
     handling: Math.max(...weapons.flatMap( w => w.stats.map( s => s.handling ))),

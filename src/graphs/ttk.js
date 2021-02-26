@@ -15,9 +15,9 @@ const withArmored = WrappedComp => props => {
     </WrappedComp>
 }
 
-const TTKLines = withArmored(({ armored, weapons, ...props }) => {
+const TTKLines = withArmored(({ armored, headshot, weapons, ...props }) => {
     const toGraphData = w => w.stats[w.tier].damage.map( s => {
-        const bullets = Math.ceil((armored ? 125 : 100) / s.value)
+        const bullets = Math.ceil((armored ? 125 : 100) / (headshot ? s.headshot : s.body))
         return { x: s.range, y: (bullets-1) / w.stats[w.tier].firerate + (bullets > w.stats[w.tier].magSize ? w.stats[w.tier].reloadtime : 0) }
     })
     return <LinearGraph weapons={weapons} toGraphData={toGraphData} title='Time to Kill' ticks={4} >
@@ -25,11 +25,11 @@ const TTKLines = withArmored(({ armored, weapons, ...props }) => {
     </LinearGraph>
 })
 
-const TTKBars = withArmored(({ armored, range, weapons, ...props }) => {
+const TTKBars = withArmored(({ armored, range, headshot, weapons, ...props }) => {
     const toValue = w => {
         const damage = w.stats[w.tier].damage.find( d => d.range >= range )
         if(!damage) return NaN
-        const bullets = Math.ceil((armored ? 125 : 100) / damage.value)
+        const bullets = Math.ceil((armored ? 125 : 100) / (headshot ? damage.headshot : damage.body))
         return Math.round(((bullets-1) / w.stats[w.tier].firerate + (bullets > w.stats[w.tier].magSize ? w.stats[w.tier].reloadtime : 0))*1000)/1000
     }
 

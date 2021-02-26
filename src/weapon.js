@@ -12,7 +12,7 @@ const Stat = ({ name, value, maxValue, invert }) => <div>
     </div>
 </div>
 
-const Weapon = ({ data, onCompare, changeTier, range }) => {
+const Weapon = ({ data, onCompare, changeTier, range, headshot }) => {
     const damage = data.stats[data.tier].damage.find( d => d.range >= range )
     return <div className="col" id={data.name}>
         <div className="card shadow-sm">
@@ -47,7 +47,7 @@ const Weapon = ({ data, onCompare, changeTier, range }) => {
             <div className="card-text" style={{color: 'grey', fontSize: '.8rem'}}>
                 <div className="d-flex">
                     <div className="flex-grow-1">
-                        <Stat name="damage" value={damage ? damage.value : NaN} maxValue={maxValues.damage} />  
+                        <Stat name="damage" value={damage ? ( headshot ? damage.headshot : damage.body) : NaN} maxValue={headshot ? maxValues.damage.headshot : maxValues.damage.body } />  
                         <Stat name="range" value={damage ? damage.range : NaN } maxValue={maxValues.range} />  
                         <Stat name="firerate" value={data.stats[data.tier].firerate} maxValue={maxValues.firerate} />  
                     </div>

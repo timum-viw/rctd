@@ -8,15 +8,18 @@
                     "damage": [
                         {
                             "range": 9,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 18,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 10,
@@ -28,15 +31,18 @@
                     "damage": [
                         {
                             "range": 9,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 18,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 10,
@@ -48,15 +54,18 @@
                     "damage": [
                         {
                             "range": 9,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 18,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 10,
@@ -83,15 +92,18 @@
                     "damage": [
                         {
                             "range": 15,
-                            "value": 25
+                            "body": 25,
+                            "headshot": "???"
                         },
                         {
                             "range": 23.5,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 5.26,
@@ -106,15 +118,18 @@
                     "damage": [
                         {
                             "range": 15,
-                            "value": 25
+                            "body": 25,
+                            "headshot": "???"
                         },
                         {
                             "range": 23.5,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 5.26,
@@ -131,15 +146,18 @@
                     "damage": [
                         {
                             "range": 15,
-                            "value": 25
+                            "body": 25,
+                            "headshot": "???"
                         },
                         {
                             "range": 23.5,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 5.26,
@@ -167,15 +185,18 @@
                     "damage": [
                         {
                             "range": 15,
-                            "value": 32
+                            "body": 32,
+                            "headshot": "???"
                         },
                         {
                             "range": 24,
-                            "value": 24
+                            "body": 24,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 20
+                            "body": 20,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 4.44,
@@ -187,15 +208,18 @@
                     "damage": [
                         {
                             "range": 15,
-                            "value": 32
+                            "body": 32,
+                            "headshot": "???"
                         },
                         {
                             "range": 24,
-                            "value": 24
+                            "body": 24,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 20
+                            "body": 20,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 4.44,
@@ -207,15 +231,18 @@
                     "damage": [
                         {
                             "range": 15,
-                            "value": 32
+                            "body": 32,
+                            "headshot": "???"
                         },
                         {
                             "range": 24,
-                            "value": 24
+                            "body": 24,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 20
+                            "body": 20,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 4.44,
@@ -245,15 +272,18 @@
                     "damage": [
                         {
                             "range": 13,
-                            "value": 18
+                            "body": 18,
+                            "headshot": "???"
                         },
                         {
                             "range": 22,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 7.14,
@@ -265,15 +295,18 @@
                     "damage": [
                         {
                             "range": 13,
-                            "value": 18
+                            "body": 18,
+                            "headshot": "???"
                         },
                         {
                             "range": 22,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 7.14,
@@ -285,15 +318,18 @@
                     "damage": [
                         {
                             "range": 13,
-                            "value": 18
+                            "body": 18,
+                            "headshot": "???"
                         },
                         {
                             "range": 22,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 7.14,
@@ -317,15 +353,18 @@
                     "damage": [
                         {
                             "range": 12,
-                            "value": 20
+                            "body": 20,
+                            "headshot": "???"
                         },
                         {
                             "range": 20,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 6.9,
@@ -337,15 +376,18 @@
                     "damage": [
                         {
                             "range": 12,
-                            "value": 20
+                            "body": 20,
+                            "headshot": "???"
                         },
                         {
                             "range": 20,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 6.9,
@@ -357,15 +399,18 @@
                     "damage": [
                         {
                             "range": 14,
-                            "value": 20
+                            "body": 20,
+                            "headshot": "???"
                         },
                         {
                             "range": 22,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 6.9,
@@ -390,15 +435,18 @@
                     "damage": [
                         {
                             "range": 16,
-                            "value": 36
+                            "body": 36,
+                            "headshot": "???"
                         },
                         {
                             "range": 25,
-                            "value": 32
+                            "body": 32,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.78,
@@ -410,15 +458,18 @@
                     "damage": [
                         {
                             "range": 22,
-                            "value": 36
+                            "body": 36,
+                            "headshot": "???"
                         },
                         {
                             "range": 31,
-                            "value": 32
+                            "body": 32,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.78,
@@ -430,15 +481,18 @@
                     "damage": [
                         {
                             "range": 22,
-                            "value": 36
+                            "body": 36,
+                            "headshot": "???"
                         },
                         {
                             "range": 31,
-                            "value": 32
+                            "body": 32,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.78,
@@ -462,15 +516,18 @@
                     "damage": [
                         {
                             "range": 11.5,
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         },
                         {
                             "range": 23,
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 8
+                            "body": 8,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 15,
@@ -482,15 +539,18 @@
                     "damage": [
                         {
                             "range": 11.5,
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         },
                         {
                             "range": 23,
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 8
+                            "body": 8,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 15,
@@ -502,15 +562,18 @@
                     "damage": [
                         {
                             "range": 11.5,
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         },
                         {
                             "range": 23,
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 8
+                            "body": 8,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 15,
@@ -525,15 +588,18 @@
                     "damage": [
                         {
                             "range": 11.5,
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         },
                         {
                             "range": 23,
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 8
+                            "body": 8,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 15,
@@ -559,15 +625,18 @@
                     "damage": [
                         {
                             "range": 13,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 23,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 10.87,
@@ -582,15 +651,18 @@
                     "damage": [
                         {
                             "range": 13,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 23,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 10.87,
@@ -605,15 +677,18 @@
                     "damage": [
                         {
                             "range": 16,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 26,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 10.87,
@@ -628,15 +703,18 @@
                     "damage": [
                         {
                             "range": 16,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 26,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 10.87,
@@ -662,15 +740,18 @@
                     "damage": [
                         {
                             "range": 18,
-                            "value": 19
+                            "body": 19,
+                            "headshot": "???"
                         },
                         {
                             "range": 33,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8.2,
@@ -682,15 +763,18 @@
                     "damage": [
                         {
                             "range": 18,
-                            "value": 19
+                            "body": 19,
+                            "headshot": "???"
                         },
                         {
                             "range": 33,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8.2,
@@ -702,15 +786,18 @@
                     "damage": [
                         {
                             "range": 18,
-                            "value": 19
+                            "body": 19,
+                            "headshot": "???"
                         },
                         {
                             "range": 33,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8.2,
@@ -725,15 +812,18 @@
                     "damage": [
                         {
                             "range": 22,
-                            "value": 19
+                            "body": 19,
+                            "headshot": "???"
                         },
                         {
                             "range": 38,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8.2,
@@ -756,15 +846,18 @@
                     "damage": [
                         {
                             "range": 12.5,
-                            "value": 15
+                            "body": 15,
+                            "headshot": "???"
                         },
                         {
                             "range": 23,
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 11.36,
@@ -776,15 +869,18 @@
                     "damage": [
                         {
                             "range": 12.5,
-                            "value": 15
+                            "body": 15,
+                            "headshot": "???"
                         },
                         {
                             "range": 23,
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 11.36,
@@ -799,15 +895,18 @@
                     "damage": [
                         {
                             "range": 15.5,
-                            "value": 15
+                            "body": 15,
+                            "headshot": "???"
                         },
                         {
                             "range": 26,
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 11.36,
@@ -822,15 +921,18 @@
                     "damage": [
                         {
                             "range": 15.5,
-                            "value": 15
+                            "body": 15,
+                            "headshot": "???"
                         },
                         {
                             "range": 26,
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 11.36,
@@ -854,15 +956,18 @@
                     "damage": [
                         {
                             "range": 12.5,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": 22,
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 8
+                            "body": 8,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 13.33,
@@ -874,15 +979,18 @@
                     "damage": [
                         {
                             "range": 12.5,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": 22,
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 8
+                            "body": 8,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 13.33,
@@ -897,15 +1005,18 @@
                     "damage": [
                         {
                             "range": 15.5,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": 25,
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 8
+                            "body": 8,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 13.33,
@@ -920,15 +1031,18 @@
                     "damage": [
                         {
                             "range": 15.5,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": 25,
-                            "value": 10
+                            "body": 10,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 8
+                            "body": 8,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 13.33,
@@ -953,15 +1067,18 @@
                     "damage": [
                         {
                             "range": 10,
-                            "value": 11
+                            "body": 11,
+                            "headshot": "???"
                         },
                         {
                             "range": 20,
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 7
+                            "body": 7,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 16.67,
@@ -973,15 +1090,18 @@
                     "damage": [
                         {
                             "range": 10,
-                            "value": 11
+                            "body": 11,
+                            "headshot": "???"
                         },
                         {
                             "range": 20,
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 7
+                            "body": 7,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 16.67,
@@ -993,15 +1113,18 @@
                     "damage": [
                         {
                             "range": 10,
-                            "value": 11
+                            "body": 11,
+                            "headshot": "???"
                         },
                         {
                             "range": 20,
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 7
+                            "body": 7,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 16.67,
@@ -1013,15 +1136,18 @@
                     "damage": [
                         {
                             "range": 13,
-                            "value": 11
+                            "body": 11,
+                            "headshot": "???"
                         },
                         {
                             "range": 24,
-                            "value": 9
+                            "body": 9,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 7
+                            "body": 7,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 16.67,
@@ -1045,15 +1171,18 @@
                     "damage": [
                         {
                             "range": 12,
-                            "value": 22
+                            "body": 22,
+                            "headshot": "???"
                         },
                         {
                             "range": 22,
-                            "value": 17
+                            "body": 17,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8,
@@ -1065,15 +1194,18 @@
                     "damage": [
                         {
                             "range": 12,
-                            "value": 22
+                            "body": 22,
+                            "headshot": "???"
                         },
                         {
                             "range": 22,
-                            "value": 17
+                            "body": 17,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8,
@@ -1085,15 +1217,18 @@
                     "damage": [
                         {
                             "range": 12,
-                            "value": 22
+                            "body": 22,
+                            "headshot": "???"
                         },
                         {
                             "range": 22,
-                            "value": 17
+                            "body": 17,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8,
@@ -1105,15 +1240,18 @@
                     "damage": [
                         {
                             "range": 15,
-                            "value": 22
+                            "body": 22,
+                            "headshot": "???"
                         },
                         {
                             "range": 25,
-                            "value": 18
+                            "body": 18,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8,
@@ -1137,15 +1275,18 @@
                     "damage": [
                         {
                             "range": 7.5,
-                            "value": 88
+                            "body": 88,
+                            "headshot": "???"
                         },
                         {
                             "range": 16,
-                            "value": 49
+                            "body": 49,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 33
+                            "body": 33,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 1.85,
@@ -1157,15 +1298,18 @@
                     "damage": [
                         {
                             "range": 7.5,
-                            "value": 88
+                            "body": 88,
+                            "headshot": "???"
                         },
                         {
                             "range": 16,
-                            "value": 49
+                            "body": 49,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 33
+                            "body": 33,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 1.85,
@@ -1177,15 +1321,18 @@
                     "damage": [
                         {
                             "range": 9.5,
-                            "value": 88
+                            "body": 88,
+                            "headshot": "???"
                         },
                         {
                             "range": 18,
-                            "value": 49
+                            "body": 49,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 33
+                            "body": 33,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 1.85,
@@ -1197,15 +1344,18 @@
                     "damage": [
                         {
                             "range": 9.5,
-                            "value": 88
+                            "body": 88,
+                            "headshot": "???"
                         },
                         {
                             "range": 18,
-                            "value": 49
+                            "body": 49,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 33
+                            "body": 33,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 1.85,
@@ -1230,7 +1380,8 @@
                     "damage": [
                         {
                             "range": 6,
-                            "value": 60
+                            "body": 60,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3.57,
@@ -1242,7 +1393,8 @@
                     "damage": [
                         {
                             "range": 8,
-                            "value": 60
+                            "body": 60,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3.57,
@@ -1254,7 +1406,8 @@
                     "damage": [
                         {
                             "range": 8,
-                            "value": 60
+                            "body": 60,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3.57,
@@ -1269,7 +1422,8 @@
                     "damage": [
                         {
                             "range": 8,
-                            "value": 60
+                            "body": 60,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3.57,
@@ -1293,7 +1447,8 @@
                     "damage": [
                         {
                             "range": 8,
-                            "value": 64
+                            "body": 64,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.67,
@@ -1305,7 +1460,8 @@
                     "damage": [
                         {
                             "range": 8,
-                            "value": 64
+                            "body": 64,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.67,
@@ -1317,7 +1473,8 @@
                     "damage": [
                         {
                             "range": 8,
-                            "value": 64
+                            "body": 64,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.67,
@@ -1332,7 +1489,8 @@
                     "damage": [
                         {
                             "range": 10,
-                            "value": 64
+                            "body": 64,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.67,
@@ -1357,15 +1515,18 @@
                     "damage": [
                         {
                             "range": 6.5,
-                            "value": 104
+                            "body": 104,
+                            "headshot": "???"
                         },
                         {
                             "range": 15,
-                            "value": 59
+                            "body": 59,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 40
+                            "body": 40,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.5,
@@ -1377,15 +1538,18 @@
                     "damage": [
                         {
                             "range": 6.5,
-                            "value": 104
+                            "body": 104,
+                            "headshot": "???"
                         },
                         {
                             "range": 15,
-                            "value": 59
+                            "body": 59,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 40
+                            "body": 40,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.5,
@@ -1397,15 +1561,18 @@
                     "damage": [
                         {
                             "range": 6.5,
-                            "value": 104
+                            "body": 104,
+                            "headshot": "???"
                         },
                         {
                             "range": 15,
-                            "value": 59
+                            "body": 59,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 40
+                            "body": 40,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.5,
@@ -1421,15 +1588,18 @@
                     "damage": [
                         {
                             "range": 8.5,
-                            "value": 104
+                            "body": 104,
+                            "headshot": "???"
                         },
                         {
                             "range": 17,
-                            "value": 59
+                            "body": 59,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 40
+                            "body": 40,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.5,
@@ -1455,15 +1625,18 @@
                     "damage": [
                         {
                             "range": 29,
-                            "value": 15
+                            "body": 15,
+                            "headshot": "???"
                         },
                         {
                             "range": 40,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8.9,
@@ -1475,15 +1648,18 @@
                     "damage": [
                         {
                             "range": 29,
-                            "value": 15
+                            "body": 15,
+                            "headshot": "???"
                         },
                         {
                             "range": 40,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8.9,
@@ -1495,15 +1671,18 @@
                     "damage": [
                         {
                             "range": 29,
-                            "value": 15
+                            "body": 15,
+                            "headshot": "???"
                         },
                         {
                             "range": 40,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8.9,
@@ -1518,15 +1697,18 @@
                     "damage": [
                         {
                             "range": 35,
-                            "value": 15
+                            "body": 15,
+                            "headshot": "???"
                         },
                         {
                             "range": 45,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 8.9,
@@ -1551,15 +1733,18 @@
                     "damage": [
                         {
                             "range": 26,
-                            "value": 19
+                            "body": 19,
+                            "headshot": "???"
                         },
                         {
                             "range": 41,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 7.52,
@@ -1571,15 +1756,18 @@
                     "damage": [
                         {
                             "range": 26,
-                            "value": 19
+                            "body": 19,
+                            "headshot": "???"
                         },
                         {
                             "range": 41,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 7.52,
@@ -1591,15 +1779,18 @@
                     "damage": [
                         {
                             "range": 26,
-                            "value": 19
+                            "body": 19,
+                            "headshot": "???"
                         },
                         {
                             "range": 41,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 7.52,
@@ -1611,15 +1802,18 @@
                     "damage": [
                         {
                             "range": 30,
-                            "value": 19
+                            "body": 19,
+                            "headshot": "???"
                         },
                         {
                             "range": 45.5,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 7.52,
@@ -1643,15 +1837,18 @@
                     "damage": [
                         {
                             "range": 23,
-                            "value": 24
+                            "body": 24,
+                            "headshot": "???"
                         },
                         {
                             "range": 38,
-                            "value": 21
+                            "body": 21,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 18
+                            "body": 18,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 6.06,
@@ -1663,15 +1860,18 @@
                     "damage": [
                         {
                             "range": 27,
-                            "value": 24
+                            "body": 24,
+                            "headshot": "???"
                         },
                         {
                             "range": 42,
-                            "value": 21
+                            "body": 21,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 18
+                            "body": 18,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 6.06,
@@ -1683,15 +1883,18 @@
                     "damage": [
                         {
                             "range": 27,
-                            "value": 24
+                            "body": 24,
+                            "headshot": "???"
                         },
                         {
                             "range": 42,
-                            "value": 21
+                            "body": 21,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 18
+                            "body": 18,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 6.06,
@@ -1706,15 +1909,18 @@
                     "damage": [
                         {
                             "range": 27,
-                            "value": 24
+                            "body": 24,
+                            "headshot": "???"
                         },
                         {
                             "range": 42,
-                            "value": 21
+                            "body": 21,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 18
+                            "body": 18,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 6.06,
@@ -1740,15 +1946,18 @@
                     "damage": [
                         {
                             "range": 24,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 40,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 9.17,
@@ -1760,15 +1969,18 @@
                     "damage": [
                         {
                             "range": 24,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 40,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 9.17,
@@ -1780,15 +1992,18 @@
                     "damage": [
                         {
                             "range": 27,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 42,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 9.17,
@@ -1803,15 +2018,18 @@
                     "damage": [
                         {
                             "range": 27,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 42,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 9.17,
@@ -1835,15 +2053,18 @@
                     "damage": [
                         {
                             "range": 15,
-                            "value": 17
+                            "body": 17,
+                            "headshot": "???"
                         },
                         {
                             "range": 30,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 9.9,
@@ -1858,15 +2079,18 @@
                     "damage": [
                         {
                             "range": 15,
-                            "value": 17
+                            "body": 17,
+                            "headshot": "???"
                         },
                         {
                             "range": 30,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 9.9,
@@ -1881,15 +2105,18 @@
                     "damage": [
                         {
                             "range": 15,
-                            "value": 17
+                            "body": 17,
+                            "headshot": "???"
                         },
                         {
                             "range": 30,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 9.9,
@@ -1906,15 +2133,18 @@
                     "damage": [
                         {
                             "range": 18,
-                            "value": 17
+                            "body": 17,
+                            "headshot": "???"
                         },
                         {
                             "range": 33,
-                            "value": 14
+                            "body": 14,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 12
+                            "body": 12,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 9.9,
@@ -1941,15 +2171,18 @@
                     "damage": [
                         {
                             "range": 34,
-                            "value": 38
+                            "body": 38,
+                            "headshot": "???"
                         },
                         {
                             "range": 44,
-                            "value": 34
+                            "body": 34,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 30
+                            "body": 30,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3.23,
@@ -1961,15 +2194,18 @@
                     "damage": [
                         {
                             "range": 34,
-                            "value": 38
+                            "body": 38,
+                            "headshot": "???"
                         },
                         {
                             "range": 44,
-                            "value": 34
+                            "body": 34,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 30
+                            "body": 30,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3.23,
@@ -1981,15 +2217,18 @@
                     "damage": [
                         {
                             "range": 34,
-                            "value": 38
+                            "body": 38,
+                            "headshot": "???"
                         },
                         {
                             "range": 44,
-                            "value": 34
+                            "body": 34,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 30
+                            "body": 30,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3.23,
@@ -2005,15 +2244,18 @@
                     "damage": [
                         {
                             "range": 34,
-                            "value": 38
+                            "body": 38,
+                            "headshot": "???"
                         },
                         {
                             "range": 44,
-                            "value": 34
+                            "body": 34,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 30
+                            "body": 30,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3.23,
@@ -2040,15 +2282,18 @@
                     "damage": [
                         {
                             "range": 37,
-                            "value": 47
+                            "body": 47,
+                            "headshot": "???"
                         },
                         {
                             "range": 47,
-                            "value": 40
+                            "body": 40,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 36
+                            "body": 36,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.22,
@@ -2060,15 +2305,18 @@
                     "damage": [
                         {
                             "range": 37,
-                            "value": 47
+                            "body": 47,
+                            "headshot": "???"
                         },
                         {
                             "range": 47,
-                            "value": 40
+                            "body": 40,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 36
+                            "body": 36,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.22,
@@ -2083,15 +2331,18 @@
                     "damage": [
                         {
                             "range": 37,
-                            "value": 47
+                            "body": 47,
+                            "headshot": "???"
                         },
                         {
                             "range": 47,
-                            "value": 40
+                            "body": 40,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 36
+                            "body": 36,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.22,
@@ -2106,7 +2357,8 @@
                     "damage": [
                         {
                             "range": "Infinity",
-                            "value": 47
+                            "body": 47,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 2.22,
@@ -2130,15 +2382,18 @@
                     "damage": [
                         {
                             "range": 27,
-                            "value": 30
+                            "body": 30,
+                            "headshot": "???"
                         },
                         {
                             "range": 37,
-                            "value": 23
+                            "body": 23,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 21
+                            "body": 21,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 4.65,
@@ -2150,15 +2405,18 @@
                     "damage": [
                         {
                             "range": 27,
-                            "value": 30
+                            "body": 30,
+                            "headshot": "???"
                         },
                         {
                             "range": 37,
-                            "value": 23
+                            "body": 23,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 21
+                            "body": 21,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 4.65,
@@ -2170,15 +2428,18 @@
                     "damage": [
                         {
                             "range": 32.5,
-                            "value": 30
+                            "body": 30,
+                            "headshot": "???"
                         },
                         {
                             "range": 45,
-                            "value": 23
+                            "body": 23,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 21
+                            "body": 21,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 4.65,
@@ -2190,15 +2451,18 @@
                     "damage": [
                         {
                             "range": 32.5,
-                            "value": 30
+                            "body": 30,
+                            "headshot": "???"
                         },
                         {
                             "range": 45,
-                            "value": 23
+                            "body": 23,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 21
+                            "body": 21,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 4.65,
@@ -2223,15 +2487,18 @@
                     "damage": [
                         {
                             "range": 18,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 33,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 11
+                            "body": 11,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 11,
@@ -2243,15 +2510,18 @@
                     "damage": [
                         {
                             "range": 18,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 33,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 11
+                            "body": 11,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 11,
@@ -2266,15 +2536,18 @@
                     "damage": [
                         {
                             "range": 21,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 36,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 11
+                            "body": 11,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 11,
@@ -2289,15 +2562,18 @@
                     "damage": [
                         {
                             "range": 21,
-                            "value": 16
+                            "body": 16,
+                            "headshot": "???"
                         },
                         {
                             "range": 36,
-                            "value": 13
+                            "body": 13,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 11
+                            "body": 11,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 11,
@@ -2322,11 +2598,13 @@
                     "damage": [
                         {
                             "range": 70,
-                            "value": 70
+                            "body": 70,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 53
+                            "body": 53,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 1,
@@ -2338,11 +2616,13 @@
                     "damage": [
                         {
                             "range": 70,
-                            "value": 70
+                            "body": 70,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 53
+                            "body": 53,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 1,
@@ -2354,11 +2634,13 @@
                     "damage": [
                         {
                             "range": 70,
-                            "value": 70
+                            "body": 70,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 53
+                            "body": 53,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 1,
@@ -2373,7 +2655,8 @@
                     "damage": [
                         {
                             "range": "Infinity",
-                            "value": 70
+                            "body": 70,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 1,
@@ -2397,11 +2680,13 @@
                     "damage": [
                         {
                             "range": 40,
-                            "value": 60
+                            "body": 60,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 46
+                            "body": 46,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3,
@@ -2413,11 +2698,13 @@
                     "damage": [
                         {
                             "range": 40,
-                            "value": 60
+                            "body": 60,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 46
+                            "body": 46,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3,
@@ -2433,11 +2720,13 @@
                     "damage": [
                         {
                             "range": 40,
-                            "value": 60
+                            "body": 60,
+                            "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "value": 46
+                            "body": 46,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3,
@@ -2453,7 +2742,8 @@
                     "damage": [
                         {
                             "range": "Infinity",
-                            "value": 60
+                            "body": 60,
+                            "headshot": "???"
                         }
                     ],
                     "firerate": 3,

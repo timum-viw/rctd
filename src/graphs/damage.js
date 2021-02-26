@@ -1,12 +1,12 @@
 import BarGraph from './bargraph'
 import LinearGraph from './lineargraph'
 
-const toGraphData = w => w.stats[w.tier].damage.map( s => ({ x: s.range, y: s.value }))
-const toValue = range => w => {
+const toGraphData = headshot => w => w.stats[w.tier].damage.map( s => ({ x: s.range, y: headshot ? s.headshot : s.body }))
+const toValue = (range, headshot) => w => {
     const damage = w.stats[w.tier].damage.find( d => d.range >= range)
-    return damage ? damage.value : NaN
+    return damage ? (headshot ? damage.headshot : damage.body) : NaN
 }
-const DamageLines = props => <LinearGraph toGraphData={toGraphData} title='Damage per bullet' ticks={4} {...props} />
-const DamageBars = ({ range, ...props }) => <BarGraph toValue={toValue(range)} title='Damage per bullet' {...props} />
+const DamageLines = ({ headshot, ...props }) => <LinearGraph toGraphData={toGraphData(headshot)} title='Damage per bullet' ticks={4} {...props} />
+const DamageBars = ({ range, headshot, ...props }) => <BarGraph toValue={toValue(range, headshot)} title='Damage per bullet' {...props} />
 
 export { DamageLines, DamageBars }

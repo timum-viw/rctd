@@ -1,6 +1,6 @@
 import Weapon from './weapon'
 
-const Grouping = ({ toGroups, weapons, setWeapons, toggleCompare, changeTier, range }) => {
+const Grouping = ({ toGroups, weapons, setWeapons, toggleCompare, changeTier, range, headshot }) => {
     const deselectGroup = g => setWeapons( weapons.map( w => ({...w, active: w.active && !toGroups(w).includes(g) })))
     const selectGroup = g => setWeapons( weapons.map( w => ({...w, active: w.active || toGroups(w).includes(g) })))
 
@@ -18,7 +18,7 @@ const Grouping = ({ toGroups, weapons, setWeapons, toggleCompare, changeTier, ra
             <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
             {weapons
                 .filter( w => toGroups(w).includes(g) )
-                .map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} range={range} />)}
+                .map( w => <Weapon key={w.name} onCompare={() => toggleCompare(w)} changeTier={changeTier} data={w} range={range} headshot={headshot} />)}
             </div>
         </div>)}
     </div>
