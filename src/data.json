@@ -9,17 +9,17 @@
                         {
                             "range": 9,
                             "body": 16,
-                            "headshot": "???"
+                            "headshot": 24
                         },
                         {
                             "range": 18,
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 19
                         },
                         {
                             "range": "Infinity",
                             "body": 9,
-                            "headshot": "???"
+                            "headshot": 13
                         }
                     ],
                     "firerate": 10,
@@ -32,17 +32,17 @@
                         {
                             "range": 9,
                             "body": 16,
-                            "headshot": "???"
+                            "headshot": 24
                         },
                         {
                             "range": 18,
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 19
                         },
                         {
                             "range": "Infinity",
                             "body": 9,
-                            "headshot": "???"
+                            "headshot": 13
                         }
                     ],
                     "firerate": 10,
@@ -55,17 +55,17 @@
                         {
                             "range": 9,
                             "body": 16,
-                            "headshot": "???"
+                            "headshot": 24
                         },
                         {
                             "range": 18,
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 19
                         },
                         {
                             "range": "Infinity",
                             "body": 9,
-                            "headshot": "???"
+                            "headshot": 13
                         }
                     ],
                     "firerate": 10,
@@ -93,17 +93,17 @@
                         {
                             "range": 15,
                             "body": 25,
-                            "headshot": "???"
+                            "headshot": 38
                         },
                         {
                             "range": 23.5,
-                            "body": 16,
-                            "headshot": "???"
+                            "body": 20,
+                            "headshot": 38
                         },
                         {
                             "range": "Infinity",
-                            "body": 13,
-                            "headshot": "???"
+                            "body": 16,
+                            "headshot": 25
                         }
                     ],
                     "firerate": 5.26,
@@ -119,17 +119,17 @@
                         {
                             "range": 15,
                             "body": 25,
-                            "headshot": "???"
+                            "headshot": 38
                         },
                         {
                             "range": 23.5,
-                            "body": 16,
-                            "headshot": "???"
+                            "body": 20,
+                            "headshot": 38
                         },
                         {
                             "range": "Infinity",
-                            "body": 13,
-                            "headshot": "???"
+                            "body": 16,
+                            "headshot": 25
                         }
                     ],
                     "firerate": 5.26,
@@ -147,17 +147,17 @@
                         {
                             "range": 15,
                             "body": 25,
-                            "headshot": "???"
+                            "headshot": 38
                         },
                         {
                             "range": 23.5,
-                            "body": 16,
-                            "headshot": "???"
+                            "body": 20,
+                            "headshot": 38
                         },
                         {
                             "range": "Infinity",
-                            "body": 13,
-                            "headshot": "???"
+                            "body": 16,
+                            "headshot": 25
                         }
                     ],
                     "firerate": 5.26,
@@ -517,17 +517,17 @@
                         {
                             "range": 11.5,
                             "body": 12,
-                            "headshot": "???"
+                            "headshot": 17
                         },
                         {
                             "range": 23,
                             "body": 10,
-                            "headshot": "???"
+                            "headshot": 14
                         },
                         {
                             "range": "Infinity",
                             "body": 8,
-                            "headshot": "???"
+                            "headshot": 11
                         }
                     ],
                     "firerate": 15,
@@ -540,17 +540,17 @@
                         {
                             "range": 11.5,
                             "body": 12,
-                            "headshot": "???"
+                            "headshot": 17
                         },
                         {
                             "range": 23,
                             "body": 10,
-                            "headshot": "???"
+                            "headshot": 14
                         },
                         {
                             "range": "Infinity",
                             "body": 8,
-                            "headshot": "???"
+                            "headshot": 11
                         }
                     ],
                     "firerate": 15,
@@ -563,17 +563,17 @@
                         {
                             "range": 11.5,
                             "body": 12,
-                            "headshot": "???"
+                            "headshot": 17
                         },
                         {
                             "range": 23,
                             "body": 10,
-                            "headshot": "???"
+                            "headshot": 14
                         },
                         {
                             "range": "Infinity",
                             "body": 8,
-                            "headshot": "???"
+                            "headshot": 11
                         }
                     ],
                     "firerate": 15,
@@ -589,17 +589,17 @@
                         {
                             "range": 11.5,
                             "body": 12,
-                            "headshot": "???"
+                            "headshot": 17
                         },
                         {
                             "range": 23,
                             "body": 10,
-                            "headshot": "???"
+                            "headshot": 14
                         },
                         {
                             "range": "Infinity",
                             "body": 8,
-                            "headshot": "???"
+                            "headshot": 11
                         }
                     ],
                     "firerate": 15,
@@ -741,17 +741,17 @@
                         {
                             "range": 18,
                             "body": 19,
-                            "headshot": "???"
+                            "headshot": 29
                         },
                         {
                             "range": 33,
-                            "body": 16,
-                            "headshot": "???"
+                            "body": 15,
+                            "headshot": 23
                         },
                         {
                             "range": "Infinity",
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 19
                         }
                     ],
                     "firerate": 8.2,
@@ -764,17 +764,17 @@
                         {
                             "range": 18,
                             "body": 19,
-                            "headshot": "???"
+                            "headshot": 29
                         },
                         {
                             "range": 33,
-                            "body": 16,
-                            "headshot": "???"
+                            "body": 15,
+                            "headshot": 23
                         },
                         {
                             "range": "Infinity",
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 19
                         }
                     ],
                     "firerate": 8.2,
@@ -787,17 +787,17 @@
                         {
                             "range": 18,
                             "body": 19,
-                            "headshot": "???"
+                            "headshot": 29
                         },
                         {
                             "range": 33,
-                            "body": 16,
-                            "headshot": "???"
+                            "body": 15,
+                            "headshot": 23
                         },
                         {
                             "range": "Infinity",
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 19
                         }
                     ],
                     "firerate": 8.2,
@@ -813,17 +813,17 @@
                         {
                             "range": 22,
                             "body": 19,
-                            "headshot": "???"
+                            "headshot": 29
                         },
                         {
                             "range": 38,
-                            "body": 16,
-                            "headshot": "???"
+                            "body": 15,
+                            "headshot": 23
                         },
                         {
                             "range": "Infinity",
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 19
                         }
                     ],
                     "firerate": 8.2,
@@ -1172,17 +1172,17 @@
                         {
                             "range": 12,
                             "body": 22,
-                            "headshot": "???"
+                            "headshot": 31
                         },
                         {
                             "range": 22,
                             "body": 17,
-                            "headshot": "???"
+                            "headshot": 23
                         },
                         {
                             "range": "Infinity",
                             "body": 14,
-                            "headshot": "???"
+                            "headshot": 20
                         }
                     ],
                     "firerate": 8,
@@ -1195,17 +1195,17 @@
                         {
                             "range": 12,
                             "body": 22,
-                            "headshot": "???"
+                            "headshot": 31
                         },
                         {
                             "range": 22,
                             "body": 17,
-                            "headshot": "???"
+                            "headshot": 23
                         },
                         {
                             "range": "Infinity",
                             "body": 14,
-                            "headshot": "???"
+                            "headshot": 20
                         }
                     ],
                     "firerate": 8,
@@ -1218,17 +1218,17 @@
                         {
                             "range": 12,
                             "body": 22,
-                            "headshot": "???"
+                            "headshot": 31
                         },
                         {
                             "range": 22,
                             "body": 17,
-                            "headshot": "???"
+                            "headshot": 23
                         },
                         {
                             "range": "Infinity",
                             "body": 14,
-                            "headshot": "???"
+                            "headshot": 20
                         }
                     ],
                     "firerate": 8,
@@ -1241,17 +1241,17 @@
                         {
                             "range": 15,
                             "body": 22,
-                            "headshot": "???"
+                            "headshot": 31
                         },
                         {
                             "range": 25,
                             "body": 18,
-                            "headshot": "???"
+                            "headshot": 25
                         },
                         {
                             "range": "Infinity",
                             "body": 14,
-                            "headshot": "???"
+                            "headshot": 20
                         }
                     ],
                     "firerate": 8,
@@ -1947,17 +1947,17 @@
                         {
                             "range": 24,
                             "body": 16,
-                            "headshot": "???"
+                            "headshot": 26
                         },
                         {
                             "range": 40,
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 21
                         },
                         {
                             "range": "Infinity",
                             "body": 12,
-                            "headshot": "???"
+                            "headshot": 19
                         }
                     ],
                     "firerate": 9.17,
@@ -1970,17 +1970,17 @@
                         {
                             "range": 24,
                             "body": 16,
-                            "headshot": "???"
+                            "headshot": 26
                         },
                         {
                             "range": 40,
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 21
                         },
                         {
                             "range": "Infinity",
                             "body": 12,
-                            "headshot": "???"
+                            "headshot": 19
                         }
                     ],
                     "firerate": 9.17,
@@ -1993,17 +1993,17 @@
                         {
                             "range": 27,
                             "body": 16,
-                            "headshot": "???"
+                            "headshot": 26
                         },
                         {
                             "range": 42,
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 21
                         },
                         {
                             "range": "Infinity",
                             "body": 12,
-                            "headshot": "???"
+                            "headshot": 19
                         }
                     ],
                     "firerate": 9.17,
@@ -2019,17 +2019,17 @@
                         {
                             "range": 27,
                             "body": 16,
-                            "headshot": "???"
+                            "headshot": 26
                         },
                         {
                             "range": 42,
                             "body": 13,
-                            "headshot": "???"
+                            "headshot": 21
                         },
                         {
                             "range": "Infinity",
                             "body": 12,
-                            "headshot": "???"
+                            "headshot": 19
                         }
                     ],
                     "firerate": 9.17,
