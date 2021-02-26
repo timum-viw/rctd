@@ -318,6 +318,14 @@
                         {
                             "range": 12,
                             "value": 20
+                        },
+                        {
+                            "range": 20,
+                            "value": 16
+                        },
+                        {
+                            "range": "Infinity",
+                            "value": 13
                         }
                     ],
                     "firerate": 6.9,
@@ -330,6 +338,14 @@
                         {
                             "range": 12,
                             "value": 20
+                        },
+                        {
+                            "range": 20,
+                            "value": 16
+                        },
+                        {
+                            "range": "Infinity",
+                            "value": 13
                         }
                     ],
                     "firerate": 6.9,
@@ -340,8 +356,16 @@
                 {
                     "damage": [
                         {
-                            "range": 12,
+                            "range": 14,
                             "value": 20
+                        },
+                        {
+                            "range": 22,
+                            "value": 16
+                        },
+                        {
+                            "range": "Infinity",
+                            "value": 13
                         }
                     ],
                     "firerate": 6.9,
@@ -2374,6 +2398,10 @@
                         {
                             "range": 40,
                             "value": 60
+                        },
+                        {
+                            "range": "Infinity",
+                            "value": 46
                         }
                     ],
                     "firerate": 3,
@@ -2386,6 +2414,10 @@
                         {
                             "range": 40,
                             "value": 60
+                        },
+                        {
+                            "range": "Infinity",
+                            "value": 46
                         }
                     ],
                     "firerate": 3,
@@ -2402,6 +2434,10 @@
                         {
                             "range": 40,
                             "value": 60
+                        },
+                        {
+                            "range": "Infinity",
+                            "value": 46
                         }
                     ],
                     "firerate": 3,
