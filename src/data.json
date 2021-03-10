@@ -353,12 +353,12 @@
                 {
                     "damage": [
                         {
-                            "range": 12,
-                            "body": 20,
+                            "range": 13,
+                            "body": 21,
                             "headshot": "???"
                         },
                         {
-                            "range": 20,
+                            "range": 21,
                             "body": 16,
                             "headshot": "???"
                         },
@@ -376,12 +376,12 @@
                 {
                     "damage": [
                         {
-                            "range": 12,
-                            "body": 20,
+                            "range": 13,
+                            "body": 21,
                             "headshot": "???"
                         },
                         {
-                            "range": 20,
+                            "range": 21,
                             "body": 16,
                             "headshot": "???"
                         },
@@ -399,12 +399,12 @@
                 {
                     "damage": [
                         {
-                            "range": 14,
-                            "body": 20,
+                            "range": 15,
+                            "body": 21,
                             "headshot": "???"
                         },
                         {
-                            "range": 22,
+                            "range": 23,
                             "body": 16,
                             "headshot": "???"
                         },
@@ -1516,17 +1516,17 @@
                     "damage": [
                         {
                             "range": 6.5,
-                            "body": 104,
+                            "body": 90,
                             "headshot": "???"
                         },
                         {
                             "range": 15,
-                            "body": 59,
+                            "body": 45,
                             "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "body": 40,
+                            "body": 34,
                             "headshot": "???"
                         }
                     ],
@@ -1539,17 +1539,17 @@
                     "damage": [
                         {
                             "range": 6.5,
-                            "body": 104,
+                            "body": 90,
                             "headshot": "???"
                         },
                         {
                             "range": 15,
-                            "body": 59,
+                            "body": 45,
                             "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "body": 40,
+                            "body": 34,
                             "headshot": "???"
                         }
                     ],
@@ -1562,17 +1562,17 @@
                     "damage": [
                         {
                             "range": 6.5,
-                            "body": 104,
+                            "body": 90,
                             "headshot": "???"
                         },
                         {
                             "range": 15,
-                            "body": 59,
+                            "body": 45,
                             "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "body": 40,
+                            "body": 34,
                             "headshot": "???"
                         }
                     ],
@@ -1589,17 +1589,17 @@
                     "damage": [
                         {
                             "range": 8.5,
-                            "body": 104,
+                            "body": 90,
                             "headshot": "???"
                         },
                         {
                             "range": 17,
-                            "body": 59,
+                            "body": 45,
                             "headshot": "???"
                         },
                         {
                             "range": "Infinity",
-                            "body": 40,
+                            "body": 34,
                             "headshot": "???"
                         }
                     ],
