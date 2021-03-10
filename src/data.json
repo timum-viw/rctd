@@ -342,7 +342,8 @@
                 }
             ],
             "rogues": [
-                "Scorch"
+                "Scorch",
+                "Seeker"
             ]
         },
         {
@@ -2164,6 +2165,73 @@
             ]
         },
         {
+            "name": "Sahara",
+            "type": "ar",
+            "stats": [
+                {
+                    "damage": [
+                        {
+                            "range": 21,
+                            "body": 24,
+                            "headshot": "???"
+                        }
+                    ],
+                    "firerate": 7.25,
+                    "handling": 29,
+                    "magSize": 20,
+                    "reloadtime": 2.4
+                },
+                {
+                    "damage": [
+                        {
+                            "range": 21,
+                            "body": 24,
+                            "headshot": "???"
+                        }
+                    ],
+                    "firerate": 7.25,
+                    "handling": 29,
+                    "magSize": 30,
+                    "reloadtime": 2.4
+                },
+                {
+                    "damage": [
+                        {
+                            "range": 21,
+                            "body": 24,
+                            "headshot": "???"
+                        }
+                    ],
+                    "firerate": 7.25,
+                    "handling": 29,
+                    "magSize": 30,
+                    "reloadtime": 2,
+                    "other": [
+                        "reduced reticle bloom"
+                    ]
+                },
+                {
+                    "damage": [
+                        {
+                            "range": 25,
+                            "body": 24,
+                            "headshot": "???"
+                        }
+                    ],
+                    "firerate": 7.25,
+                    "handling": 36,
+                    "magSize": 30,
+                    "reloadtime": 2,
+                    "other": [
+                        "reduced reticle bloom"
+                    ]
+                }
+            ],
+            "rogues": [
+                "Seeker"
+            ]
+        },
+        {
             "name": "D3D-i",
             "type": "dmr",
             "stats": [
@@ -2477,6 +2545,67 @@
             "rogues": [
                 "Dahlia",
                 "Trench"
+            ]
+        },
+        {
+            "name": "Arren L2-12",
+            "type": "dmr",
+            "stats": [
+                {
+                    "damage": [
+                        {
+                            "range": 35.01,
+                            "body": 32,
+                            "headshot": "???"
+                        }
+                    ],
+                    "firerate": 5,
+                    "handling": 50,
+                    "magSize": 12,
+                    "reloadtime": 1.6
+                },
+                {
+                    "damage": [
+                        {
+                            "range": 35.01,
+                            "body": 32,
+                            "headshot": "???"
+                        }
+                    ],
+                    "firerate": 5,
+                    "handling": 50,
+                    "magSize": 16,
+                    "reloadtime": 1.4
+                },
+                {
+                    "damage": [
+                        {
+                            "range": 35.01,
+                            "body": 32,
+                            "headshot": "???"
+                        }
+                    ],
+                    "firerate": 5,
+                    "handling": 60,
+                    "magSize": 16,
+                    "reloadtime": 1.4
+                },
+                {
+                    "damage": [
+                        {
+                            "range": "Infinity",
+                            "body": 32,
+                            "headshot": "???"
+                        }
+                    ],
+                    "firerate": 5,
+                    "handling": 60,
+                    "magSize": 16,
+                    "reloadtime": 1.4
+                }
+            ],
+            "rogues": [
+                "Seeker"
             ]
         },
         {
