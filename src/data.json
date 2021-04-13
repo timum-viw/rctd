@@ -1946,12 +1946,12 @@
                 {
                     "damage": [
                         {
-                            "range": 24,
+                            "range": 19,
                             "body": 16,
                             "headshot": 26
                         },
                         {
-                            "range": 40,
+                            "range": 35,
                             "body": 13,
                             "headshot": 21
                         },
@@ -1969,12 +1969,12 @@
                 {
                     "damage": [
                         {
-                            "range": 24,
+                            "range": 19,
                             "body": 16,
                             "headshot": 26
                         },
                         {
-                            "range": 40,
+                            "range": 35,
                             "body": 13,
                             "headshot": 21
                         },
@@ -1992,12 +1992,12 @@
                 {
                     "damage": [
                         {
-                            "range": 27,
+                            "range": 22,
                             "body": 16,
                             "headshot": 26
                         },
                         {
-                            "range": 42,
+                            "range": 37,
                             "body": 13,
                             "headshot": 21
                         },
@@ -2018,12 +2018,12 @@
                 {
                     "damage": [
                         {
-                            "range": 27,
+                            "range": 22,
                             "body": 16,
                             "headshot": 26
                         },
                         {
-                            "range": 42,
+                            "range": 37,
                             "body": 13,
                             "headshot": 21
                         },
